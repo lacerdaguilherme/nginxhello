@@ -6,7 +6,7 @@ metadata:
     app: hellogui
 spec:
   selector:
-    app: hellohellogui
+    app: hellogui
   ports:
   - port: 9923
     targetPort: 80
