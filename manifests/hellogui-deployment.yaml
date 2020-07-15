@@ -21,10 +21,11 @@ spec:
             requests:
                 cpu: 100m
                 memory: 50Mi
-        name: hellogui-html
-        image: lacerdaguilherme/nginxhello:latest
-        env:
-        - name: AUTOR
-          value: "anonimo"   
-        ports:
-        - containerPort: 80
+          name: hellogui-html
+          image: lacerdaguilherme/nginxhello:latest
+          env:
+          - name: AUTOR
+            value: "anonimo"   
+          ports:
+          - containerPort: 80
+            name: hellogui
