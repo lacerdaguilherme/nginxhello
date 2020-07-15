@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hellogui
+  labels:
+    app: hellogui
+spec:
+  replicas: 2
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: hellogui
+  template:
+    metadata:
+      labels:
+        app: hellogui
+    spec:
+      containers:
+        - resources:
+            requests:
+                cpu: 100m
+                memory: 50Mi
+        name: hellogui-html
+        image: lacerdaguilherme/nginxhello:latest
+        env:
+        - name: AUTOR
+          value: "anonimo"   
+        ports:
+        - containerPort: 80

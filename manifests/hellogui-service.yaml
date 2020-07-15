@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hellogui
+  labels:
+    app: hellogui
+spec:
+  selector:
+    app: hellohellogui
+  ports:
+  - port: 80
+    targetPort: 9923
+  type: LoadBalancer
+  loadBalancerIP: "34.95.159.129"
