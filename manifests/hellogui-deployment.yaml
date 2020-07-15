@@ -26,11 +26,10 @@ spec:
           env:
           - name: AUTOR
             value: "anonimo"   
-          command: ["bash","-c","echo AUTOR > "]
           ports:
           - containerPort: 80
             name: hellogui
           lifecycle:
             postStart:
               exec:
-                command: ["sh", "-c", "echo ${AUTOR} >> /usr/share/nginx/html/index.html"]
+                command: ["/bin/sh", "-c", "echo ${AUTOR} >> /usr/share/nginx/html/index.html"]
