@@ -8,7 +8,7 @@ spec:
   selector:
     app: hellohellogui
   ports:
-  - port: 80
-    targetPort: 9923
+  - port: 9923
+    targetPort: 80
   type: LoadBalancer
   loadBalancerIP: "34.95.159.129"
