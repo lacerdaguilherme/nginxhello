@@ -26,6 +26,7 @@ spec:
           env:
           - name: AUTOR
             value: "anonimo"   
+          command: ["bash","-c","echo $AUTOR > index.html"]
           ports:
           - containerPort: 80
             name: hellogui
