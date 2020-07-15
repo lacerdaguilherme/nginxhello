@@ -11,6 +11,6 @@
 5. Arquivo .tf inicial AWS RDS
 
 ### Pendencias
-[ ] Comitar manifesto ingress
-[ ] Manifesto para Docker Compose
-[X] Upload no formulário
+- [ ] Comitar manifesto ingress
+- [ ] Manifesto para Docker Compose
+- [X] Upload no formulário
